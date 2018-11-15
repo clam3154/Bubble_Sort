@@ -7,8 +7,13 @@ public class bubbleRunner {
             list[i] = 1+(int)(Math.random()*(9));
             System.out.print(list[i] + ",");
         }
+        System.out.println();
         bubbleSort sorted = new bubbleSort();
-        sorted.bubbleSorter(list);
-        //System.out.println(sorted);
+        int[] result = sorted.bubbleSorter(list);
+        for(int i = 0; i< result.length; i++)
+        {
+            list[i] = 1+(int)(Math.random()*(9));
+            System.out.print(result[i] + ",");
+        }
     }
 }
